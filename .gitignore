@@ -1,0 +1,16 @@
+# 가상환경 / 빌드 결과
+.venv/
+build/
+dist/
+*.spec
+__pycache__/
+*.pyc
+build_log.txt
+build_err.txt
+
+# PDF는 모두 제외: 개인 문서가 올라가는 것을 막고,
+# 테스트용 sample.pdf에는 글꼴이 통째로 들어가므로 올리지 않음 (make_sample.py로 생성)
+*.pdf
+*.docx
+*.hwpx
+*.hwp

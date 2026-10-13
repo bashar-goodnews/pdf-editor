@@ -1,0 +1,4 @@
+PyMuPDF
+PySide6
+pdf2docx
+python-hwpx
