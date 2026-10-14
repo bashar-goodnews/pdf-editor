@@ -11,6 +11,15 @@
 | [python-hwpx](https://github.com/airmang/python-hwpx) | PDF → 한글(hwpx) 변환 | Apache-2.0 |
 | [PyInstaller](https://pyinstaller.org/) | exe 파일 생성 (빌드 도구) | GPL-2.0 + 예외 조항 (결과물에 영향 없음) |
 
+## 배포본(exe)에 포함된 구성 요소
+
+exe에는 위 라이브러리와 그 의존 라이브러리(OpenCV, numpy, fontTools, lxml 등)가 함께 들어 있습니다.
+각 구성 요소의 라이선스 문구 전문은 [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)에 있습니다.
+(`make_notices.py`로 생성합니다.)
+
+- **Qt (LGPL-3.0)**: exe 폴더의 `_internal\PySide6` 안에 별도 DLL 파일로 들어 있어 교체할 수 있습니다.
+- **PyMuPDF (AGPL-3.0)**: 이 프로그램의 소스코드 전체를 이 저장소에서 제공합니다.
+
 ## 글꼴
 
 이 프로그램은 글꼴 파일을 포함하지 않습니다. 사용자 PC에 설치된 글꼴(예: 맑은 고딕)을 불러와서 사용합니다.
